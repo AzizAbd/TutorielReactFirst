@@ -1,7 +1,28 @@
-function TemporaryName() {
+function Header() {
+  return (
+    <header>
+      <nav className="nav">
+        <img src="./React-icon.svg.png" className="nav-logo" />
+        <ul className="nav-items">
+          <li>Pricing </li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
+function Footer() {
+  return (
+    <footer id="foot">
+      <smal>2021 developement. All rights reserved.</smal>
+    </footer>
+  );
+}
+
+function MainComponent() {
   return (
     <div>
-      <img src="./React-icon.svg.png" width="100px" />
       <h1>fun facts about react</h1>
       <ul>
         <li>Was first released in 2013</li>
@@ -10,7 +31,21 @@ function TemporaryName() {
         <li>Is maintained by Facebook</li>
         <li>Powers thousands of entrprise apps, including mobile apps</li>
       </ul>
+      <p>
+        {" "}
+        React Components is function that returns React element (object when use
+        jsx syntax) UI
+      </p>
     </div>
   );
 }
-ReactDOM.render(<TemporaryName />, document.getElementById("root"));
+function Page() {
+  return (
+    <div>
+      <Header />
+      <MainComponent />
+      <Footer />
+    </div>
+  );
+}
+ReactDOM.render(<Page />, document.getElementById("root"));

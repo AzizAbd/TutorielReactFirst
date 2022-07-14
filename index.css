@@ -1,4 +1,25 @@
 html, body {
-    margin: 10px;
-    padding: 12px;
+    margin: -px;
+    padding: 6px;
+}
+#foot{
+   
+color: red;
+}
+.nav-items{
+    list-style:none;
+    display:flex;
+    
+}
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.nav-items> li {
+    padding:10px
+}
+.nav-logo{
+    width:150px;
 }
